@@ -33,6 +33,8 @@ tesseract.recognize("/home/rohit/Desktop/orc/product_onboarding/visiting-cards/c
         console.log(err, err.stack); 
       }
       else { 
+	   res.send(Data.ResultList[0])
+
         var da_ta = (Data.ResultList[0]);	// Here Analysis of data from Data for image.
         var k = da_ta.Entities
         for (var i of k){
