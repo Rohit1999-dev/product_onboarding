@@ -17,7 +17,7 @@ AWS.config.update({
   });
   var comprehend = new AWS.Comprehend();
 
-tesseract.recognize("/home/rohit/Desktop/orc/visiting-cards/card3.JPG",config)
+tesseract.recognize("/home/rohit/Desktop/orc/product_onboarding/visiting-cards/card1.JPG",config)
 .then((Data)=>{
     var params = {
         LanguageCode: 'en',
